@@ -351,9 +351,10 @@
       .footer-container {
         max-width: 1200px;
         margin: 0 auto;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 30px;
+      }
+      .footer-row {
+        --bs-gutter-x: 24px;
+        row-gap: 30px;
       }
       footer h2 {
         font-size: 1.1rem;
@@ -697,43 +698,45 @@
 
     <!-- FOOTER -->
     <footer>
-      <div class="footer-container">
-        <section>
-          <h2>Kontakt</h2>
-          <p>Lind Old Boys</p>
-          <p>Email: <a href="mailto:info@lob.dk">info@lob.dk</a></p>
-          <p>Telefon: <a href="tel:+4512345678">+45 12 34 56 78</a></p>
-        </section>
-
-        <section>
-          <h2>Privatlivspolitik</h2>
-          <ul>
-            <li><a href="/privatlivspolitik">Privatlivspolitik</a></li>
-            <li><a href="/cookie-politik">Cookie Politik</a></li>
-          </ul>
-        </section>
-
-        <section>
-          <h2>Links</h2>
-          <ul>
-            <li><a href="omlob.html">Om L.O.B</a></li>
-            <li><a href="kontakt.html">Kontakt Os</a></li>
-            <li><a href="medlemskab.html">Bliv Medlem</a></li>
-          </ul>
-        </section>
-
-        <section>
-          <h2>Andet</h2>
-          <ul>
-            <li><a href="vedtaegter.html">Vedtægter</a></li>
-            <li><a href="arrangementer.html">Generalforsamling</a></li>
-          </ul>
-          <div class="social">
-            <a href="https://www.facebook.com/lindoldboys" target="_blank"
-              ><span>f</span></a
-            >
+      <div class="footer-container container">
+        <div class="row footer-row row-cols-1 row-cols-md-2 row-cols-lg-4">
+          <div class="col">
+            <h2>Kontakt</h2>
+            <p>Lind Old Boys</p>
+            <p>Email: <a href="mailto:info@lob.dk">info@lob.dk</a></p>
+            <p>Telefon: <a href="tel:+4512345678">+45 12 34 56 78</a></p>
           </div>
-        </section>
+
+          <div class="col">
+            <h2>Privatlivspolitik</h2>
+            <ul>
+              <li><a href="/privatlivspolitik">Privatlivspolitik</a></li>
+              <li><a href="/cookie-politik">Cookie Politik</a></li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <h2>Links</h2>
+            <ul>
+              <li><a href="omlob.html">Om L.O.B</a></li>
+              <li><a href="kontakt.html">Kontakt Os</a></li>
+              <li><a href="medlemskab.html">Bliv Medlem</a></li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <h2>Andet</h2>
+            <ul>
+              <li><a href="vedtaegter.html">Vedtægter</a></li>
+              <li><a href="arrangementer.html">Generalforsamling</a></li>
+            </ul>
+            <div class="social">
+              <a href="https://www.facebook.com/lindoldboys" target="_blank"
+                ><span>f</span></a
+              >
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="divider"></div>
